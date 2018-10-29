@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Exec=/opt/ide/intellij/ankit-gupta/idea-IC-{{intellij_build}}/bin/idea.sh
+Name=Intellij
+Icon=/opt/ide/intellij/ankit-gupta/idea-IC-{{intellij_build}}/bin/idea.png

@@ -1,0 +1,15 @@
+---
+# tasks file for chrome
+
+- name: Include OS Specific Vars
+  include_vars: "{{item}}"
+  with_first_found:
+    - "vars-{{ansible_distribution}}-Chrome.yml"
+    - "default.yml"
+
+- name: Include OS Specific
+  include: "{{item}}"
+  with_first_found:
+    - "{{ansible_distribution}}-Chrome.yml"
+    - "default.yml"
+

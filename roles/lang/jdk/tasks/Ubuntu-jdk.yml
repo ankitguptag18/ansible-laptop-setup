@@ -1,0 +1,5 @@
+---
+
+- name: Install JDK
+  become: yes
+  apt: pkg=openjdk-{{java_version}}-jdk state=latest

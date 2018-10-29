@@ -1,0 +1,26 @@
+---
+- name: install dependencies (apt)
+  become: yes
+  apt:
+    name:
+      - ca-certificates
+      - apt-transport-https
+    state: present
+
+- name: install key (apt)
+  become: yes
+  apt_key:
+    url: "{{apt_file}}"
+    state: present
+
+- name: install VS Code repo (apt)
+  become: yes
+  apt_repository:
+    repo: deb [arch=amd64] {{vs_code_repo}} stable main
+    filename: vscode
+    state: present
+
+- name: Install VS Code
+  become: yes
+  apt: pkg=code state=latest
+

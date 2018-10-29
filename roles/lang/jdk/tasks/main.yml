@@ -1,0 +1,8 @@
+---
+# tasks file for jdk
+
+- name: Include OS Specific
+  include: "{{item}}"
+  with_first_found:
+    - "{{ansible_distribution}}-jdk.yml"
+    - "default.yml"

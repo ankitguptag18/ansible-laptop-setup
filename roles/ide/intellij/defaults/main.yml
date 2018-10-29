@@ -1,0 +1,8 @@
+---
+# defaults file for intellij
+
+intellij_version: 2018.2.5
+intellij_build: 182.4892.20
+intellij_download_url: https://download-cf.jetbrains.com/idea/ideaIC-{{intellij_version}}-no-jdk.tar.gz
+intellij_download_location: /usr/src/intellij
+intellij_install_location: /opt/ide/intellij

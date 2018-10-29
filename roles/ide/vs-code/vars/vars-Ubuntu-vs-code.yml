@@ -1,0 +1,3 @@
+
+apt_file: https://packages.microsoft.com/keys/microsoft.asc
+vs_code_repo: https://packages.microsoft.com/repos/vscode

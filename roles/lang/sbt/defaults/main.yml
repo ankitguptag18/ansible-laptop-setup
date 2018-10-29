@@ -1,0 +1,4 @@
+---
+# defaults file for sbt
+
+java_version: 8

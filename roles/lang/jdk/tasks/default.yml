@@ -1,0 +1,3 @@
+---
+- name: OS Not Supported
+  command: echo "OS Not Supported"

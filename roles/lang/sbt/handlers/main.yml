@@ -1,0 +1,4 @@
+---
+- name: check_sbt_version
+  command: sbt sbtVersion
+  become: false

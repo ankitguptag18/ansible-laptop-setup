@@ -1,0 +1,16 @@
+---
+# tasks file for common
+
+- name: Install Basic packages for all
+  become: yes
+  apt:
+    name: 
+      - curl
+      - traceroute
+      - ack
+      - net-tools
+      - gcc
+      - make
+      - automake
+      - autoconf
+    state: latest

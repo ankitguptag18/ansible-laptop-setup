@@ -1,0 +1,5 @@
+---
+
+- name: Install JRE
+  become: yes
+  apt: pkg=openjdk-{{java_version}}-jre state=latest

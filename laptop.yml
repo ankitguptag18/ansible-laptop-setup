@@ -1,0 +1,27 @@
+---
+- hosts: localhost
+  become: true
+  roles:
+    - { role: common,
+        tags: [ common ] }
+
+    - { role: browsers/chrome,
+        tags: [ browsers,chrome ] }
+
+    - { role: lang/jdk,
+        java_version: 8,
+        tags: [ lang,jdk ] }
+
+    - { role: lang/jre,
+        java_version: 8,
+        tags: [ lang,jre ] }
+
+    - { role: lang/sbt,
+        tags: [ lang,sbt ] }
+
+    - { role: ide/vs-code,
+        tags: [ ide,vs-code ] }
+
+    - { role: ide/intellij,
+        user: ankit-gupta,
+        tags: [ ide,intellij ] }
